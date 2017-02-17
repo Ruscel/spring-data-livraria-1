@@ -151,7 +151,15 @@ public class SpringDataLivrariaApplication implements CommandLineRunner {
 		Editora e = new Editora("Érica", "Rio de Janeiro", 1937);
 		this.servicoEditoras.salvar(e);
 
+		Editora e1=servicoEditoras.buscarPeloTitulo("Bookman");
+		
+		e1.setCidade("Porto Alegre");
+		this.servicoEditoras.salvar(e1);
+				
+		System.out.println(e1);
+		
 	}
+	
 
 	public static void main(String[] args) {
 		SpringApplication.run(SpringDataLivrariaApplication.class, args);

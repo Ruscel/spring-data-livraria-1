@@ -25,6 +25,10 @@ public class Editora {
 	@Column(name = "ANO_FUNDACAO")
 	private int anoFundacao;
 
+	public Editora() {
+
+	}
+
 	public Editora(String nome, String cidade, int anoFundacao) {
 		this.nome = nome;
 		this.cidade = cidade;

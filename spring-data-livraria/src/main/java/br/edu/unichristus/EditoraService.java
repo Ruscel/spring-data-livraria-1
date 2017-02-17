@@ -12,4 +12,11 @@ public class EditoraService {
 	public void salvar(Editora e) {
 		this.repo.save(e);
 	}
+	
+	public Editora buscarPeloTitulo(String nome){
+		return this.repo.findByNome(nome);
+		
+	}
+	
+	
 }

@@ -5,5 +5,9 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface EditoraRepository extends JpaRepository<Editora, Long> {
+	
+	public Editora findByNome(String nome);
+
+
 
 }

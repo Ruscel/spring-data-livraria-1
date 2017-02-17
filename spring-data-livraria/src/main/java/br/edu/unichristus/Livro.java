@@ -25,6 +25,7 @@ public class Livro {
 	@Column(name = "PRECO")
 	private BigDecimal preco;
 
+
 	public Livro() {
 	}
 
